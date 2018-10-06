@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DrawWithData</title>
+    <script src="script.js" type="application/javascript" id="our-custom-script"></script>
+    <!--D3 import script from Course Notes:-->
+    <script src="https://d3js.org/d3.v5.js" id="d3-script"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" id="our-custom-stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <h1>Drawing With Data</h1>
+
+    <div id="data-container">
+        <svg height="500" width="500">
+            <style>
+                svg text {
+                    font-family: sans-serif;
+                }
+            </style>
+        </svg>
+        <div id="sidebar">
+            <h2 id="filter-header">Filters</h2>
+            <div id="age-filter-group" class="filter-group">
+                <h4>Filter Age</h4>
+                <div class="min-container bound-container">
+                    <input placeholder="none" data-bound="ageMin"/>
+                    <div>Min</div>
+                </div>
+                <div class="max-container bound-container">
+                    <input placeholder="none" data-bound="ageMax"/>
+                    <div>Max</div>
+                </div>
+            </div>
+            <div id="weight-filter-group" class="filter-group">
+                <h4>Filter Weight</h4>
+                <div class="min-container bound-container">
+                    <input placeholder="none" data-bound="weightMin"/>
+                    <div>Min</div>
+                </div>
+                <div class="max-container bound-container">
+                    <input placeholder="none" data-bound="weightMax"/>
+                    <div>Max</div>
+                </div>
+            </div>
+            <div id="height-filter-group" class="filter-group">
+                <h4>Filter Height</h4>
+                <div class="min-container bound-container">
+                    <input placeholder="none" data-bound="heightMin"/>
+                    <div>Min</div>
+                </div>
+                <div class="max-container bound-container">
+                    <input placeholder="none" data-bound="heightMax"/>
+                    <div>Max</div>
+                </div>
+            </div>
+            <div id="sex-filter-group" class="filter-group">
+                <h4>Filter Sex</h4>
+                <div class="min-container radio-container">
+                    <input placeholder="none" data-sex="f" type="radio" name="sex" value="f" id="female-radio"/>
+                    <label for="female-radio">Female</label>
+                </div>
+                <div class="max-container radio-container">
+                    <input placeholder="none" data-sex="m" type="radio" name="sex" value="m" id="male-radio"/>
+                    <label for="male-radio">Male</label>
+                </div>
+            </div>
+            <div id="filter-buttons-container">
+                <div id="filter-button">Filter</div>
+                <div id="clear-button">Clear</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
