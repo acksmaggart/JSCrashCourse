@@ -1,0 +1,24 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 40px 0 2.5em 50px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid rgb(39, 35, 35);
+    padding-bottom: .5em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    margin: 0 0 20px 50px;
+    width: 400px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    display: block;
+    margin-left: 50px;
+    padding: .5em;
+}
