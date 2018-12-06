@@ -1,0 +1,30 @@
+h1 {
+    color: red;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+div {
+    background-color: gold;
+    width: 700px;
+    height: 300px;
+    margin: 40px 60px;
+    padding: 20px 30px;
+    border: 10px solid yellowgreen;
+    border-radius: 20px;
+}
+
+div * {
+    font-family: serif;
+    color: yellow;
+}
+
+div>* {
+    color: turquoise;
+}
+
+#second-paragraph {
+    color: white;
+}

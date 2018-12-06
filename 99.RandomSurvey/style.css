@@ -1,0 +1,12 @@
+body {
+    padding: 1.5em;
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 28pt;
+}
+
+svg {
+    margin: 50px 100px;
+}
