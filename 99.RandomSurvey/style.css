@@ -5,6 +5,7 @@ body {
 h1, h4 {
     font-family: Roboto, sans-serif;
     font-size: 28pt;
+        color: #49464a;
 }
 
 svg {

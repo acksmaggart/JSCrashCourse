@@ -18,7 +18,12 @@ function update(data) {
     console.log(grouped);
 
     // let colorScale = d3.scaleLinear().domain([0, 1]).range(['#ffb3bb', '#c80635']);
-    let colorScale = d3.scaleOrdinal(d3.schemePaired);
+    let colorSpecs = [
+        ['#f9cfe1', '#9979b8', '#586fa1', '#f4d553', '#f6f4bf'], // Banana Alergy
+        []
+    ];
+    // let colorScale = d3.scaleOrdinal(d3.schemePaired);
+    let colorScale = d3.scaleOrdinal(['#3ACC18', '#519940', '#E3FF04', '#7D44FF', '#1D18CC']);
 
 
     /*** Draw the Donut Charts ***/
@@ -80,7 +85,8 @@ function update(data) {
         .attr('font-size', 22)
         .attr('alignment-baseline', 'hanging')
         .attr('text-anchor', 'start')
-        .attr('transform', 'translate(5, 0)');
+        .attr('transform', 'translate(5, 0)')
+        .attr('fill', '#625e63');
 
     // Create the Labels
     // Topic-level groups
@@ -109,7 +115,8 @@ function update(data) {
         .attr('font-family', 'Roboto, sans-serif')
         .attr('font-size', 12)
         .attr('alignment-baseline', 'baseline')
-        .attr('transform', `translate(15, 10)`);
+        .attr('transform', `translate(15, 10)`)
+        .attr('fill', '#625e63');
 
 }
 
